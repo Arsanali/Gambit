@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol NetworkManager {
+    typealias completion = (Result<[Product], Error>)-> ()
+}
+
+class NetworkManagerExp: NetworkManager {
+    func pushData(completionHandler: @escaping (completion)) {
+        
+    }
+}

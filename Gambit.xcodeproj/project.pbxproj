@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D365EAD748494C176600286 /* Pods_Gambit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976CB9F7CEB7E763AD445244 /* Pods_Gambit.framework */; };
 		CEA4639C253F5D1900074FA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4639B253F5D1900074FA0 /* AppDelegate.swift */; };
 		CEA4639E253F5D1900074FA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4639D253F5D1900074FA0 /* SceneDelegate.swift */; };
 		CEA463A0253F5D1900074FA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4639F253F5D1900074FA0 /* ViewController.swift */; };
 		CEA463A3253F5D1900074FA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA463A1253F5D1900074FA0 /* Main.storyboard */; };
 		CEA463A5253F5D1C00074FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA463A4253F5D1C00074FA0 /* Assets.xcassets */; };
 		CEA463A8253F5D1C00074FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA463A6253F5D1C00074FA0 /* LaunchScreen.storyboard */; };
+		CEA463B6253F5F3400074FA0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA463B5253F5F3400074FA0 /* Product.swift */; };
+		CEA463BA253F60EC00074FA0 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA463B9253F60EC00074FA0 /* MainPresenter.swift */; };
+		CEA463C4253F641200074FA0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA463C3253F641200074FA0 /* NetworkManager.swift */; };
+		CEA463C8253F65E900074FA0 /* FavoriteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA463C7253F65E900074FA0 /* FavoriteData.swift */; };
+		CEA463CC253F6FF100074FA0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA463CB253F6FF100074FA0 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065B9AC66B235093A219C759 /* Pods-Gambit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gambit.debug.xcconfig"; path = "Target Support Files/Pods-Gambit/Pods-Gambit.debug.xcconfig"; sourceTree = "<group>"; };
+		52F5852F60ACADE026F14EAF /* Pods-Gambit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gambit.release.xcconfig"; path = "Target Support Files/Pods-Gambit/Pods-Gambit.release.xcconfig"; sourceTree = "<group>"; };
+		976CB9F7CEB7E763AD445244 /* Pods_Gambit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gambit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA46398253F5D1900074FA0 /* Gambit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gambit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA4639B253F5D1900074FA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA4639D253F5D1900074FA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		CEA463A4253F5D1C00074FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA463A7253F5D1C00074FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA463A9253F5D1C00074FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA463B5253F5F3400074FA0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CEA463B9253F60EC00074FA0 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CEA463C3253F641200074FA0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEA463C7253F65E900074FA0 /* FavoriteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteData.swift; sourceTree = "<group>"; };
+		CEA463CB253F6FF100074FA0 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D365EAD748494C176600286 /* Pods_Gambit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1895F595FAE6620229B0C7DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				976CB9F7CEB7E763AD445244 /* Pods_Gambit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C59C30E585699AFA017FF77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065B9AC66B235093A219C759 /* Pods-Gambit.debug.xcconfig */,
+				52F5852F60ACADE026F14EAF /* Pods-Gambit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEA4638F253F5D1900074FA0 = {
 			isa = PBXGroup;
 			children = (
 				CEA4639A253F5D1900074FA0 /* Gambit */,
 				CEA46399253F5D1900074FA0 /* Products */,
+				3C59C30E585699AFA017FF77 /* Pods */,
+				1895F595FAE6620229B0C7DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +93,74 @@
 			children = (
 				CEA4639B253F5D1900074FA0 /* AppDelegate.swift */,
 				CEA4639D253F5D1900074FA0 /* SceneDelegate.swift */,
-				CEA4639F253F5D1900074FA0 /* ViewController.swift */,
-				CEA463A1253F5D1900074FA0 /* Main.storyboard */,
+				CEA463C2253F63F900074FA0 /* Data */,
+				CEA463C1253F63F000074FA0 /* NetworManager */,
+				CEA463B0253F5F0A00074FA0 /* Screens */,
 				CEA463A4253F5D1C00074FA0 /* Assets.xcassets */,
 				CEA463A6253F5D1C00074FA0 /* LaunchScreen.storyboard */,
 				CEA463A9253F5D1C00074FA0 /* Info.plist */,
 			);
 			path = Gambit;
+			sourceTree = "<group>";
+		};
+		CEA463B0253F5F0A00074FA0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463B1253F5F1200074FA0 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CEA463B1253F5F1200074FA0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463B4253F5F2700074FA0 /* Presenter */,
+				CEA463B3253F5F2100074FA0 /* View */,
+				CEA463B2253F5F1A00074FA0 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEA463B2253F5F1A00074FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463B5253F5F3400074FA0 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA463B3253F5F2100074FA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463A1253F5D1900074FA0 /* Main.storyboard */,
+				CEA463CB253F6FF100074FA0 /* ProductCell.swift */,
+				CEA4639F253F5D1900074FA0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA463B4253F5F2700074FA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463B9253F60EC00074FA0 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEA463C1253F63F000074FA0 /* NetworManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463C3253F641200074FA0 /* NetworkManager.swift */,
+			);
+			path = NetworManager;
+			sourceTree = "<group>";
+		};
+		CEA463C2253F63F900074FA0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEA463C7253F65E900074FA0 /* FavoriteData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA463AC253F5D1C00074FA0 /* Build configuration list for PBXNativeTarget "Gambit" */;
 			buildPhases = (
+				7C19A27AA687A8D0D4E5BFA5 /* [CP] Check Pods Manifest.lock */,
 				CEA46394253F5D1900074FA0 /* Sources */,
 				CEA46395253F5D1900074FA0 /* Frameworks */,
 				CEA46396253F5D1900074FA0 /* Resources */,
+				EE367658B99E6D28872CC3D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +230,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C19A27AA687A8D0D4E5BFA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gambit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE367658B99E6D28872CC3D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gambit/Pods-Gambit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gambit/Pods-Gambit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gambit/Pods-Gambit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEA46394253F5D1900074FA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA463BA253F60EC00074FA0 /* MainPresenter.swift in Sources */,
 				CEA463A0253F5D1900074FA0 /* ViewController.swift in Sources */,
+				CEA463B6253F5F3400074FA0 /* Product.swift in Sources */,
+				CEA463C4253F641200074FA0 /* NetworkManager.swift in Sources */,
 				CEA4639C253F5D1900074FA0 /* AppDelegate.swift in Sources */,
+				CEA463CC253F6FF100074FA0 /* ProductCell.swift in Sources */,
 				CEA4639E253F5D1900074FA0 /* SceneDelegate.swift in Sources */,
+				CEA463C8253F65E900074FA0 /* FavoriteData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +428,7 @@
 		};
 		CEA463AD253F5D1C00074FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065B9AC66B235093A219C759 /* Pods-Gambit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +448,7 @@
 		};
 		CEA463AE253F5D1C00074FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F5852F60ACADE026F14EAF /* Pods-Gambit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
