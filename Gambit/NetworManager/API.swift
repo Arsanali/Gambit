@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+enum API {
+    static let baseUrl = "https://api.gambit-app.ru/category/39?page=1"
+}

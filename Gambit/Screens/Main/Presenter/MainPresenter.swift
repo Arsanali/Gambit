@@ -20,12 +20,25 @@ class MainPresenterExp: MainPresenter {
     
     var model: [Product]?
     weak var view: MainView?
+    let networking: NetworkManager?
     
     init(view: MainView) {
         self.view = view
+        networking = NetworkManagerExp()
     }
     
     func getData() {
-        print("")
+        networking?.pushData(completionHandler: {[weak self] (response) in
+            DispatchQueue.main.async { [self] in
+                switch response {
+                case .success(let data):
+                    self?.model = data
+                    self?.view?.showData()
+                    print("Данные пришли \(data)")
+                case .failure(let error):
+                    print("Ошибка \(error.localizedDescription)")
+                }
+            }
+        })
     }
 }

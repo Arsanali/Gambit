@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ProductCell: UITableViewCell {
     
@@ -26,12 +27,14 @@ class ProductCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUpSell(){
+    func setUpSell(with model: Product){
+        name.text = model.name
+        descriptionLabel.text = model.description
+        price.text = ("\(model.price) ₽") 
         
-    }
-    
-    @IBAction func basketButton(_ sender: Any) {
         
+        let urlImage = URL(string: model.image ?? "")
+        productImage.sd_setImage(with: urlImage, completed: nil)
     }
     
     @IBAction func addButton(_ sender: UIButton) {
@@ -42,5 +45,4 @@ class ProductCell: UITableViewCell {
         
     }
     
-
 }
