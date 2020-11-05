@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MainView:class {
-    func showData()
+    func showData(items: [Product])
 }
 
 protocol MainPresenter:class {
@@ -33,7 +33,7 @@ class MainPresenterExp: MainPresenter {
                 switch response {
                 case .success(let data):
                     self?.model = data
-                    self?.view?.showData()
+                    self?.view?.showData(items: data)
                     print("Данные пришли \(data)")
                 case .failure(let error):
                     print("Ошибка \(error.localizedDescription)")

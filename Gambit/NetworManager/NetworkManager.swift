@@ -36,6 +36,7 @@ class NetworkManagerExp: NetworkManager {
             
             print("Данные не пришли \(error.localizedDescription)")
             
-                }        }
+            }
+        }
     }
 }
